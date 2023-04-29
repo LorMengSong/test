@@ -1,0 +1,85 @@
+/* @google font */
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+/* @global color */
+:root {
+    --blue-color        : #09316F;
+    --orange-color      : #FF5E10;
+    --pink-white-color  : #F1EED0;
+    --black-color       : #000000;
+}
+/* @theme font family */
+body {
+    font-family: 'Exo', sans-serif;
+}
+
+.home figure .detail {
+    padding: 10px;
+    background-color: var(--pink-white-color);
+}
+
+.home a {
+    text-decoration: none;
+}
+
+.home figure .title {
+    color: var(--blue-color);
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.home figure .date {
+    color: var(--orange-color);
+}
+
+.home figure .description {
+    color: var(--black-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+/* @ipad pro site */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home figure img {
+        width: 100%;
+    }
+    .home figure .title {
+        font-size: 16px;
+    }
+}
+
+/* @ipad site */
+@media (min-width: 768px) and (max-width: 991px) {    
+    .home figure img {
+        width: 100%;
+    }
+    .home figure .title {
+        font-size: 16px;
+    }
+    .home .col-3 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* @mobile site */
+@media (max-width: 575px) {    
+    .home figure img {
+        width: 100%;
+    }
+    .home figure .title {
+        font-size: 16px;
+    }
+    .home .col-3 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
